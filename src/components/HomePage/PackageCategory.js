@@ -12,7 +12,7 @@ function PackageCategory() {
             <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="packagebannerbigimg" alt="bannerimg"/>
           
            <div className="packagebigimgtxt">
-           <h1>Altaf h miazee</h1>
+           <h1>USA-CANADA</h1>
              <p>Starts from 40000</p>
              <p>Dhaka to chattagong</p>
            </div>
@@ -20,9 +20,9 @@ function PackageCategory() {
           </div>
 
           <div  className="packagehero-seaction">
-            <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="packagebannerbigimg" alt="bannerimg"/>
+            <img src="images/pexels-lumn-167699.jpg" className="packagebannerbigimg" alt="bannerimg"/>
             <div className="packagebigimgtxt">
-             <h1>Altaf h miazee</h1>
+             <h1>London-Dhaka</h1>
              <p>Starts from 40000</p>
              <p>Dhaka to chattagong</p>
            </div>

@@ -4,9 +4,11 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #efeff4;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
   "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
-  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+
+  font-family: 'Mochiy Pop P One', sans-serif;
 }
 .navbardesign{
   
@@ -17,17 +19,16 @@ ul{
   list-style-type:none;
 }
 .logo img{
-  height: 80px;
-  width: 100px;
+  /* height: 80px;
+  width: 100px; */
   /* padding-left: 45px; */
 }
 
 .navbar{
-  display: flex;
-  justify-content: space-between;
-  padding:15px;
+  /* display: flex;
+  justify-content: space-between; */
+  padding:5px;
   color: black;
-  /* background-color: blue; */
 }
 .nav-tags{
   display: flex;
@@ -41,20 +42,16 @@ ul{
   /* color: whitesmoke; */
 }
 
-
-
-
-
 .container{
-  padding: 10px;
+  /* padding: 10px; */
   /* background-color: #efeff4; */
 }
 .header{
- 
+ padding-top:30px;
 }
 h1{
-  /* padding: 8px; */
-  padding: 0px 0px 20px 0px;
+  padding: 8px 0px 28px 0px;
+  /* padding: 0px 0px 20px 0px; */
   /* font-size: 35px; */
   line-height: 1.25;
   font-weight: 700;
@@ -206,31 +203,30 @@ border-radius: 8px;
 /* Package category seaction---------------------------------------------- */
 
 .packagebigrow {
-  /* display: grid; 
+  display: grid; 
   grid-template-columns: repeat(auto-fill,minmax(400px,2fr)); 
-   grid-gap: 8vw;
+   grid-gap: 10vw;
     align-items: center;
-    padding: 15px; */
-    display: flex;
 }
 .packagebannerbigimg{
-  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
   max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  height:100%;
+  border-radius: 8px;
   opacity: 0.6;
   transition: transform .2s;
 }
 .packagebannerbigimg:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .packagehero-seaction{
-  max-width: 600px;
-  width: 50%;
-  height: 100%;
+  background-color: #fff;
   border-radius: 8px;
-  overflow: hidden;
-  height: 260px;
+  padding: 10px;
+  height: 280px;
+  width: 500px;
 }
 .packagebigimgtxt h1{
  
@@ -362,4 +358,96 @@ footer--------------------------------------------------------*/
   font-size:13px;
   color:#aaa;
   margin-bottom:0;
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!! here is details page style starting ------------------------------------*/
+
+.detailbannerbigimg{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-width: 100%;
+  height:100%;
+  border-radius: 8px;
+  transition: transform .2s;
+}
+.detailbannerbigimg:hover {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.detailhero-seaction{
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  height: 480px;
+  width: 600px;
+}
+.detailsmallflex{
+  display: flex;
+}
+.detailsmall-seaction{
+  background-color: #fff;
+  /* border-radius: 8px; */
+  padding: 10px;
+  height: 120px;
+  width: 160px;
+}
+
+.detailbannersmallimg{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-width: 100%;
+  height:100%;
+  border-radius: 8px;
+  transition: transform .2s;
+}
+
+.buttoncover{
+  /* text-align: center; */
+  margin-left: 20%;
+  padding: 20px;
+}
+.detailbutton{
+  background-color: rebeccapurple;
+  padding:12px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.detailbutton:hover{
+  background-color: red;
+}
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!from here our product page design css start------------------------ */
+
+.productimg{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-width: 100%;
+  height:100%;
+  border-radius: 8px;
+  transition: transform .2s;
+}
+.productimg:hover {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.productimg-seaction{
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  height: 480px;
+  width: 450px;
 }

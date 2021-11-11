@@ -22,34 +22,6 @@ function Adverts() {
     </div>
     </div>
 
-
-
-
-
-
-
-
-
-        {/* <div class="container">
-        <div class="row  advertrow  d-flex justify-content-center">
-
-
-                    <div class="advert-center ">
-
-                    <div class="advert-box">
-                        <img src="images/_mpimage.webp" alt=""/>
-                    </div>
-
-                    <div class="advert-box">
-                        <img src="images/_mpimage.webp" alt=""/>
-                    </div>
-
-                    </div>
-
-
-
-            </div>
-        </div> */}
       
         </div>
     )

@@ -8,6 +8,8 @@ import Footer from './components/HomePage/Footer';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Details from './components/HomePage/Details';
+import Productpage from './components/HomePage/Productpage';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Adverts/>
       <Trending/>
       <PackageCategory/>
+      <Details/>
+      <Productpage/>
       <Footer/>
     
     </div>
