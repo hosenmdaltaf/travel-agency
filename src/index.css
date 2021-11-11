@@ -1,22 +1,72 @@
 
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efeff4;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+  "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
+  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.navbardesign{
+  
+  background-color: #efeff4;
+}
 
-/* .hero-section { */
-	/* background-image: url("/src/assets/landingBannerTop.jpg"); */
-	/* background-size: auto;
-	background-size: cover;
-	height: 200px; */
-	/* padding-top: 100px; */
-  /* object-fit: contain;
-  border-radius: 10%; */
-	/* position: relative;
-	overflow: hidden;
-	height:200px; */
-	/* width: 100%; */
-	/* text-align: center;
-  border-radius: 20%;
-} */
+ul{
+  list-style-type:none;
+}
+.logo img{
+  height: 80px;
+  width: 100px;
+  /* padding-left: 45px; */
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+  color: black;
+  /* background-color: blue; */
+}
+.nav-tags{
+  display: flex;
+  align-items: center;
+
+}
+.nav-tags li{
+  margin-right: 30px;
+  font-size: 1rem;
+  font-weight: 400;
+  /* color: whitesmoke; */
+}
 
 
+
+
+
+.container{
+  padding: 10px;
+  /* background-color: #efeff4; */
+}
+.header{
+ 
+}
+h1{
+  /* padding: 8px; */
+  padding: 0px 0px 20px 0px;
+  /* font-size: 35px; */
+  line-height: 1.25;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.25rem;
+  
+}
+.hero-seaction{
+  padding-right: 10px;
+}
 .bannerimg{
 	/* max-width: 100%;
 	max-height: 100%;
@@ -25,14 +75,35 @@
 	background-size: contain; 
 	width: auto;
 	height: auto; */
-
+  border-radius: 10px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
 }
 
 /* advert seaction-------------------------------------------------------------------------------------------------------- */
-
+.advertimg{
+  object-fit: cover;
+object-position: center;
+width: 100%;
+max-width: 100%;
+height:100%;
+border-radius: 8px;
+}
+.advertseaction{
+  display: flex;
+  align-items: center;
+  /* justify-content:space-evenly; */
+  background-color: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(10,9,9,.1) !important; */
+  padding: 10px;
+  height: 170px;
+  width: 500px;
+}
+.advertrow {
+ 
+}
 .advert-center {
 	display: flex;
 	justify-content: space-around;
@@ -64,53 +135,126 @@
 
 /* treanding seaction---------------------------------------------- */
 
-/* .categoryrow {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1%;
-	margin-left: 80px;
-	margin-right: 80px;
+.trdcol{
+  display: grid; 
+  grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); 
+   grid-gap: 2vw;
+    align-items: center;
 }
+/* .trdrows{
 
-.Categorybox {
-	display: flex;
-	justify-content: space-around;
-	border: 1px solid #d4d4d4;
-	align-items: center;
-	padding: 15px 10px 15px 15px;
-	margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  padding: 80px;
 } */
-
-.trdrows{
-  display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1%;
-  justify-items: center;
-}
 .trdimgcover{
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   height: 100%;
   border-radius: 2px;
   overflow: hidden;
-  height: 250px;
+  height: 280px;
   border-radius: 8px;
 }
+
 .trdimg{
   object-fit: cover;
   object-position: center;
   width: 100%;
   max-width: 100%;
   height:100%;
+  transition: transform .2s;
+}
+.trdimg:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .trdcontent{
-  /* text-align: center; */
-  /* margin-left: 90px; */
+  margin-top: 16px;
+  line-height: 10px;
+  font-weight: 400;
+  font-size:1rem;
+  color: black;
+}
+.trdcontent h5{
+    color: rebeccapurple;
+    padding: 0.20em;
  
+}
+.trdcontentp{
+  /* line-height: 20px; */
+  color: #757575;
+  line-height: 1.5;
+}
+.trdprice{
+  display: flex;
+  align-items: center;
+  
+  /* justify-content: space-evenly; */
+  
+}
+.trdprice p{
+ margin-top: 6px;
+}
+.moneyimg{
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  margin-bottom: 3px;
 }
 
 
 /* Package category seaction---------------------------------------------- */
+
+.packagebigrow {
+  /* display: grid; 
+  grid-template-columns: repeat(auto-fill,minmax(400px,2fr)); 
+   grid-gap: 8vw;
+    align-items: center;
+    padding: 15px; */
+    display: flex;
+}
+.packagebannerbigimg{
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: transform .2s;
+}
+.packagebannerbigimg:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.packagehero-seaction{
+  max-width: 600px;
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 260px;
+}
+.packagebigimgtxt h1{
+ 
+  color:black;
+  font-weight: 600;
+}
+.packagebigimgtxt{
+  position: relative;
+  bottom: 180px;
+  color: black;
+  font-weight: 600;
+  padding: 20px;
+}
+.hero-seaction{
+  padding-right: 10px;
+}
+.packagebannerimg{
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  
+}
+
 .Packagecardimgcover{
   max-width: 128px;
   width: 50%;
@@ -118,6 +262,14 @@
   border-radius: 8px;
   overflow: hidden;
   height: 160px;
+}
+.packagerow{
+  display: grid; 
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr)); 
+   grid-gap: 8vw;
+    align-items: center;
+    padding: 15px;
+
 }
 .Packageimg{
   object-fit: cover;
@@ -141,14 +293,13 @@ height:100%;
   margin-left:70px ;
 
 }
-.rows{
+/* .rows{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap:1px;
-  /* margin-left: 100px; */
   padding: 20px;
   justify-items: center;
-}
+} */
 
 /*
 
