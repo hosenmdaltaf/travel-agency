@@ -1,23 +1,81 @@
 import React from 'react'
-import Slider from "react-slick";
 
-function Trending() {
-
-    const settings = {
-      // dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-    };
-
+function Product() {
     return (
-      
-        <div class="container">
-        <h1 >Trending Deals </h1>
+        <div>
+ 
+
+
+
+                <h1>Header</h1>
+            <div class="container">
+            <div class="row ">
+                <div class="col-8">
+                
+                <div  className="detailhero-seaction">
+                    <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="detailbannerbigimg" alt="bannerimg"/>
+                </div>
+
+                <div class="col-12 detailsmallflex">
+                <div  className="detailsmall-seaction">
+                    <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="detailbannersmallimg" alt="bannerimg"/>
+                </div>
+
+                <div  className="detailsmall-seaction">
+                    <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="detailbannersmallimg" alt="bannerimg"/>
+                </div>
+
+                <div  className="detailsmall-seaction">
+                    <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="detailbannersmallimg" alt="bannerimg"/>
+                </div>
+
+                </div>
+
+                <div className="buttoncover">
+                    <button className="detailbutton">Book Now</button>
+                </div>
+
+                </div>
+
+               
+
+                <div class="col-4">
+                    <div>
+                    <h1>Dhaka-Cox's Bazar</h1>
+                    <p>3 days trip</p>
+                    <p>start from 29999</p>
+                    </div>
+
+                    <div>
+                        <h1>Features</h1>
+                        <p>Meet and Greet on arrival at New Jalpaiguri Railway Station/ Bagdogra International Airport and transfer to Darjeeling (6,950 Ft.).
+                         On arrival check in to the hotel. Overnight stay at Darjeeling.</p>
+                    </div>
+
+                    <div>
+                        <h1>Descripation</h1>
+                        <p>
+                        Meet and Greet on arrival at New Jalpaiguri Railway Station/ Bagdogra International 
+                        Airport and transfer to Darjeeling (6,950 Ft.). On arrival check in to the hotel. Overnight stay at Darjeeling.
+                        </p>
+                    </div>
+               
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container">
+        <h1 >Similar Packages </h1>
       {/* <Slider {...settings}>         */}
   <div className="row trdcol ">
  
@@ -106,8 +164,8 @@ function Trending() {
   
   </div>
 
-     
+        </div>
     )
 }
 
-export default Trending
+export default Product

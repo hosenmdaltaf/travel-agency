@@ -1,18 +1,29 @@
 import React from 'react'
 
-function Productpage() {
+function Details() {
     return (
         <div>
-            <h1>Header</h1>
+                       <h1>Header</h1>
             <div class="container">
             <div class="row ">
-                <div class="col-2">
+                <div class="col-3">
                     <h1>Price range</h1>
+                    <hr/>
+                    <div className="priceRange">
+                        <div>
+                            <p>Minimum Price</p>
+                            <p className="pricebold">10000</p>
+                        </div>
+                        <div>
+                            <p>Maximum Price</p>
+                            <p className="pricebold">80000</p>
+                        </div>
+                    </div>
 
                 </div>
 
 
-                <div class="col-10">
+                <div class="col-9">
 
                 <div class="row ">
                 <div class="col-6">
@@ -74,8 +85,24 @@ function Productpage() {
 
                 </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     )
 }
 
-export default Productpage
+export default Details

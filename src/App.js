@@ -1,27 +1,39 @@
-
-import Navbar from './components/HomePage/Navbar';
-import HeaderSlider from './components/HomePage/HeaderSlider';
-import Adverts from './components/HomePage/Adverts';
-import Trending from './components/HomePage/Trending';
-import PackageCategory from './components/HomePage/PackageCategory';
-import Footer from './components/HomePage/Footer';
+import React from 'react'
+import {  BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Details from './components/HomePage/Details';
-import Productpage from './components/HomePage/Productpage';
+
+import Detailpage from './pages/Detailpage';
+import Productpage from './pages/Productpage';
+import Homepage from './pages/Homepage';
+
 
 function App() {
   return (
     <div >
-      <Navbar/>
-      <HeaderSlider/>
-      <Adverts/>
-      <Trending/>
-      <PackageCategory/>
-      <Details/>
-      <Productpage/>
-      <Footer/>
+      
+{/* 
+    <Homepage/>
+    <Detailpage/>
+    <Productpage/> */}
+
+   <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<Homepage/>} />
+          <Route path='/Productpage' element={ <Detailpage/>} />
+          <Route path='/Detailpage' element={ <Productpage/> } />
+      </Routes>
+    </BrowserRouter>
+
+
+
+    {/* <Routes>
+          <Route path='/Homepage' element={<Homepage/>} />
+          <Route path='/Productpage' element={ <Detailpage/>} />
+          <Route path='/Detailpage' element={ <Productpage/> } />
+    </Routes> */}
+
     
     </div>
   );

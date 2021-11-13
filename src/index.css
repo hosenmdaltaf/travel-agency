@@ -9,10 +9,14 @@
   "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
 
   font-family: 'Mochiy Pop P One', sans-serif;
+  text-decoration: none;
 }
 .navbardesign{
   
   background-color: #efeff4;
+}
+.NavLink {
+  text-decoration: none;
 }
 
 ul{
@@ -427,9 +431,6 @@ footer--------------------------------------------------------*/
 
 
 
-
-
-
 /* !!!!!!!!!!!!!from here our product page design css start------------------------ */
 
 .productimg{
@@ -447,7 +448,14 @@ footer--------------------------------------------------------*/
 .productimg-seaction{
   background-color: #fff;
   border-radius: 8px;
-  padding: 10px;
-  height: 480px;
-  width: 450px;
+  padding: 10px 0px 10px 0px;
+  height: 450px;
+  width: 400px;
+}
+.priceRange{
+  display: flex;
+  justify-content: space-around;
+}
+.pricebold{
+  font-weight: 700;
 }
