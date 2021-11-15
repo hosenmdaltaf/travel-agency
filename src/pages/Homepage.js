@@ -1,11 +1,12 @@
 import React from 'react'
-
-import Navbar from '../components/HomePageComponents/Navbar';
 import HeaderSlider from '../components/HomePageComponents/HeaderSlider';
 import Adverts from '../components/HomePageComponents/Adverts';
 import Trending from '../components/HomePageComponents/Trending';
 import PackageCategory from '../components/HomePageComponents/PackageCategory';
-import Footer from '../components/HomePageComponents/Footer';
+
+import Navbar from '../components/GlobalComponents/Navbar'
+import Footer from '../components/GlobalComponents/Footer';
+
 
 function Homepage() {
     return (

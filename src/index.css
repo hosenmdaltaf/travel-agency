@@ -4,54 +4,45 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #efeff4;
-  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
-  "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji",
-  "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
-
   font-family: 'Mochiy Pop P One', sans-serif;
   text-decoration: none;
 }
-.navbardesign{
-  
+
+
+
+.navbar {
   background-color: #efeff4;
+  color: #957bda;
+  padding: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.nav-link {
+  margin-right: 15px;
+  color: #957bda;
 }
 .NavLink {
   text-decoration: none;
 }
+.navbar-nav :last-child {
+  /* color: #646771; */
+  
+  /* background-color: #957bda; */
 
-ul{
-  list-style-type:none;
-}
-.logo img{
-  /* height: 80px;
-  width: 100px; */
-  /* padding-left: 45px; */
+
+  
 }
 
-.navbar{
-  /* display: flex;
-  justify-content: space-between; */
-  padding:5px;
-  color: black;
-}
-.nav-tags{
-  display: flex;
-  align-items: center;
 
-}
-.nav-tags li{
-  margin-right: 30px;
-  font-size: 1rem;
-  font-weight: 400;
-  /* color: whitesmoke; */
-}
+
 
 .container{
   /* padding: 10px; */
   /* background-color: #efeff4; */
 }
 .header{
- padding-top:30px;
+ /* padding-top:30px; */
 }
 h1{
   padding: 8px 0px 28px 0px;
@@ -69,13 +60,7 @@ h1{
   padding-right: 10px;
 }
 .bannerimg{
-	/* max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
-	background-position: 50% 50%;
-	background-size: contain; 
-	width: auto;
-	height: auto; */
+
   border-radius: 10px;
   max-width: 100%;
   height: auto;
@@ -206,11 +191,13 @@ border-radius: 8px;
 
 /* Package category seaction---------------------------------------------- */
 
+
 .packagebigrow {
   display: grid; 
   grid-template-columns: repeat(auto-fill,minmax(400px,2fr)); 
    grid-gap: 10vw;
     align-items: center;
+ 
 }
 .packagebannerbigimg{
   object-fit: cover;
@@ -268,6 +255,7 @@ border-radius: 8px;
   grid-template-columns: repeat(auto-fill,minmax(400px,1fr)); 
    grid-gap: 8vw;
     align-items: center;
+    /* padding: 15px; */
     padding: 15px;
 
 }
@@ -292,76 +280,6 @@ height:100%;
 .Packagecontent{
   margin-left:70px ;
 
-}
-/* .rows{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:1px;
-  padding: 20px;
-  justify-items: center;
-} */
-
-/*
-
-footer--------------------------------------------------------*/
-.footer-basic {
-  padding:40px 0;
-  background-color:#ffffff;
-  color:#4b4c4d;
-}
-
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
-}
-
-.footer-basic li {
-  padding:0 10px;
-}
-
-.footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity:1;
-}
-
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
-
-.footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
-}
-
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
-
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
 }
 
 
@@ -432,7 +350,15 @@ footer--------------------------------------------------------*/
 
 
 /* !!!!!!!!!!!!!from here our product page design css start------------------------ */
+.productpackagerow{
+  display: grid; 
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr)); 
+   grid-gap: 3vw;
+    align-items: center;
+    padding: 4px;
 
+  
+}
 .productimg{
   object-fit: cover;
   object-position: center;
@@ -459,3 +385,130 @@ footer--------------------------------------------------------*/
 .pricebold{
   font-weight: 700;
 }
+
+
+
+
+/* 
+!!!!!!!!!!!footer seaction---------------------------------------------- */
+
+footer {
+  background-color: #efeff4;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px;
+  bottom: 0;
+  color:black;
+}
+
+.footer-navigation h3 {
+  margin: 0;
+  font: normal 36px Cookie, cursive;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.footer-navigation h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-navigation h3 span {
+  color: black;
+}
+
+.footer-navigation p.links a {
+  color: black;
+  text-decoration: none
+}
+
+.footer-navigation p.company-name {
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 20px
+}
+
+/* @media (max-width:767px) {
+  .footer-contacts {
+      margin: 30px 0
+  }
+} */
+
+.footer-contacts p {
+  display: inline-block;
+  color: black;
+  vertical-align: middle
+}
+
+.footer-contacts p a {
+  color: #5383d3;
+  text-decoration: none
+}
+
+.fa.footer-contacts-icon {
+  background-color: #33383b;
+  color: #fff;
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  margin: 10px 15px 10px 0
+}
+
+span.new-line-span {
+  display: block;
+  font-weight: normal;
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2
+}
+
+.footer-about h4 {
+  display: block;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px
+}
+
+.footer-about p {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0
+}
+
+div.social-links {
+  margin-top: 20px;
+  color: #fff
+}
+
+.social-links a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 5px;
+  margin-bottom: 5px
+}
+
+/* .footer {
+  bottom: 0;
+  position: absolute
+} */
+

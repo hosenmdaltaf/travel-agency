@@ -2,21 +2,17 @@ import React from 'react'
 
 function Product() {
     return (
-        <div>
+        <div> 
  
-
-
-
-                <h1>Header</h1>
             <div class="container">
             <div class="row ">
-                <div class="col-8">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 m-gri ">
                 
                 <div  className="detailhero-seaction">
                     <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="detailbannerbigimg" alt="bannerimg"/>
                 </div>
 
-                <div class="col-12 detailsmallflex">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-gri  detailsmallflex">
                 <div  className="detailsmall-seaction">
                     <img src="images/DtJfvWYtSJc0elYWC2okSUrZAJwqGtMo.jpg" className="detailbannersmallimg" alt="bannerimg"/>
                 </div>
@@ -31,15 +27,13 @@ function Product() {
 
                 </div>
 
-                <div className="buttoncover">
-                    <button className="detailbutton">Book Now</button>
-                </div>
+              
 
                 </div>
 
                
 
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 m-gri ">
                     <div>
                     <h1>Dhaka-Cox's Bazar</h1>
                     <p>3 days trip</p>
@@ -60,6 +54,10 @@ function Product() {
                         </p>
                     </div>
                
+                </div>
+
+                <div className="buttoncover">
+                    <button className="detailbutton">Book Now</button>
                 </div>
             </div>
             </div>
@@ -163,6 +161,8 @@ function Product() {
 {/* </Slider> */}
   
   </div>
+
+
 
         </div>
     )
