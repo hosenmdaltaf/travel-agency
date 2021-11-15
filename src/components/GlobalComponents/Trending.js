@@ -1,29 +1,20 @@
 import React from 'react'
-import Slider from "react-slick";
 
-import { Link, NavLink } from "react-router-dom";
+
+import {  NavLink } from "react-router-dom";
 
 function Trending() {
 
-    const settings = {
-      // dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-    };
+   
 
     return (
       
         <div class="container">
         <h1 >Trending Deals </h1>
-      {/* <Slider {...settings}>         */}
-  <div className="row trdcol ">
+  
+  <div className="row trdrow ">
  
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-gri ">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-gri trdcol ">
   
     <NavLink to="/Detailpage" style={{ textDecoration: 'none',  color: 'inherit',}}>
     <div className="trdseaction">
@@ -47,6 +38,7 @@ function Trending() {
  
     
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-gri">
+    <NavLink to="/Detailpage" style={{ textDecoration: 'none',  color: 'inherit',}}>
     <div className="trdseaction">
             <div className="trdimgcover">
             <img  className="trdimg" src="images/pexels-lumn-167699.jpg" alt="cardimg"/>
@@ -63,9 +55,11 @@ function Trending() {
 
             </div>
             </div>
+            </NavLink>
     </div>
     
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-gri">
+    <NavLink to="/Detailpage" style={{ textDecoration: 'none',  color: 'inherit',}}>
     <div className="trdseaction">
             <div className="trdimgcover">
             <img  className="trdimg" src="images/pexels-pixabay-221457.jpg" alt="cardimg"/>
@@ -82,9 +76,11 @@ function Trending() {
 
             </div>
             </div>
+            </NavLink>
     </div>
     
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-gri">
+    <NavLink to="/Detailpage" style={{ textDecoration: 'none',  color: 'inherit',}}>
     <div className="trdseaction">
             <div className="trdimgcover">
             <img  className="trdimg" src="images/pexels-aleksandar-pasaric-325185(1).jpg" alt="cardimg"/>
@@ -103,11 +99,12 @@ function Trending() {
             </div>
           
         </div>
+        </NavLink>
 
     </div>
     
   </div>
-{/* </Slider> */}
+
   
   </div>
 

@@ -16,7 +16,9 @@
   padding: 0px;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
+.navlogo{
+  color: #957bda;
+}
 
 .nav-link {
   margin-right: 15px;
@@ -50,7 +52,7 @@ h1{
   /* font-size: 35px; */
   line-height: 1.25;
   font-weight: 700;
-  color: black;
+  color: #957bda;
   margin: 0;
   font-weight: 500;
   font-size: 2.25rem;
@@ -121,18 +123,22 @@ border-radius: 8px;
 
 /* treanding seaction---------------------------------------------- */
 
-.trdcol{
+.trdrow{
   display: grid; 
   grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); 
    grid-gap: 2vw;
     align-items: center;
+    /* grid-gap: 2vw; gap: 2vw; */
 }
-/* .trdrows{
+.trdcol{
 
-  display: flex;
+  /* display: flex;
   align-items: center;
-  padding: 80px;
-} */
+  padding: 80px; */
+  padding: 10px;
+ 
+
+}
 .trdimgcover{
   max-width: 250px;
   width: 100%;
@@ -159,7 +165,7 @@ border-radius: 8px;
   line-height: 10px;
   font-weight: 400;
   font-size:1rem;
-  color: black;
+  color: #957bda;
 }
 .trdcontent h5{
     color: rebeccapurple;
@@ -168,7 +174,7 @@ border-radius: 8px;
 }
 .trdcontentp{
   /* line-height: 20px; */
-  color: #757575;
+  color: #957bda;
   line-height: 1.5;
 }
 .trdprice{
@@ -283,10 +289,8 @@ height:100%;
 }
 
 
-
-
-
 /* !!!!!!!!!!!!!!!!!!!!!!! here is details page style starting ------------------------------------*/
+
 
 .detailbannerbigimg{
   object-fit: cover;
@@ -402,32 +406,32 @@ footer {
   padding: 55px 50px;
   margin-top: 80px;
   bottom: 0;
-  color:black;
+  color: #957bda;
 }
 
 .footer-navigation h3 {
   margin: 0;
   font: normal 36px Cookie, cursive;
   margin-bottom: 20px;
-  color: black;
+  color: #957bda;
 }
 
 .footer-navigation h3 a {
   text-decoration: none;
-  color: black;
+  color: #957bda;
 }
 
 .footer-navigation h3 span {
-  color: black;
+  color: #957bda;
 }
 
 .footer-navigation p.links a {
-  color: black;
+  color: #957bda;
   text-decoration: none
 }
 
 .footer-navigation p.company-name {
-  color: black;
+  color: #957bda;
   font-size: 14px;
   font-weight: normal;
   margin-top: 20px
@@ -441,7 +445,7 @@ footer {
 
 .footer-contacts p {
   display: inline-block;
-  color: black;
+  color: #957bda;
   vertical-align: middle
 }
 
@@ -473,7 +477,7 @@ span.new-line-span {
 
 .footer-about h4 {
   display: block;
-  color: black;
+  color: #957bda;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px
@@ -481,7 +485,7 @@ span.new-line-span {
 
 .footer-about p {
   line-height: 20px;
-  color: #92999f;
+  color: #957bda;
   font-size: 13px;
   font-weight: normal;
   margin: 0
@@ -492,7 +496,7 @@ div.social-links {
   color: #fff
 }
 
-.social-links a {
+.social-links i {
   display: inline-block;
   width: 35px;
   height: 35px;
